@@ -25,7 +25,7 @@ namespace CDC.Logging
         private void Write(LogLevel level, string Message,
             string memberName_DoNotUse = "",
             string sourceFilePath_DoNotUse = "",
-             int sourceLineNumber_DoNotUse = 0)
+            int sourceLineNumber_DoNotUse = 0)
         {
             if (level != LogLevel.Info && level != LogLevel.Trace)
                 logFile.WriteLine("[" + level.ToString() + "] " + Message + " (" + sourceFilePath_DoNotUse + ":" + sourceLineNumber_DoNotUse + " - " + memberName_DoNotUse + ")");
